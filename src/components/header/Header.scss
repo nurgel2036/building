@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 200vh;
+    .outTor {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f3f5;
+        // overflow: hidden;
+        .inTor {
+            width: 1330px;
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            align-items: center;
+            img {
+                width: 214px;
+                height: 80px;
+                object-fit: cover;
+                object-position: center;
+            }
+            .rightTor {
+                display: flex;
+                width: 768px;
+                height: 51px;
+                justify-content: space-between;
+                .in-right-tor {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        transform: scale(0.6);
+                        margin-right: 5px;
+                        box-shadow: 0px 4px 24px #dde2eb;
+                    }
+                    .in-in-right-tor {
+                        .in-in-right-tor-words {
+                            letter-spacing: 0.5px;
+                            font-size: 16px;
+                            color: #6e777d;
+                            font-weight: 600;
+                            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+                                Geneva, Verdana, sans-serif;
+                            line-height: 24px;
+                            margin-bottom: -3px;
+                            text-align: left;
+                       
+                          
+                        }
+                        .in-in-right-tor-words-p {
+                            transition: all 0.3s;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                            text-align: left;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #0c0a0a;
+                            transition: 0.3s;
+                            &:hover {
+                                color: #ff6600;
+                            }
+                        }
+                    }
+                }
+                .svasatsa {
+                    height: 51px;
+                    display: flex;
+                    align-items: center;
+                    background: #ff6600;
+                    padding: 17px 33px;
+                    border: none;
+                   color: #fff;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+                    line-height: 10px;
+                    max-width: max-content;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    transition: 0.3s;
+                    border-radius: 2px;
+                    min-width: max-content;
+                    letter-spacing: 2px;
+                    position: relative;
+                    .overlay{
+                        position: absolute;
+                        top: 51px;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #0c0a0a;
+                    transition: all 0.3s;
+                        
+                    }
+                    &:hover{
+                        span{
+                            color: #fff !important;
+                            z-index: 99999;
+                        }
+                        .overlay{
+                            top: 0;
+                        }
+                    }
+                    img {
+                        color: #0557fb !important;
+                        width: 20px;
+                        height: 20px;
+                        background: #ff6600;
+                        margin-left: 6px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1360px) {
+    body {
+        .outTor {
+            .inTor {
+                width: 1125px;
+                display: flex;
+                justify-content: space-between;
+                .rightTor {
+                    display: flex;
+                    justify-content: flex-end;
+                    .in-right-tor {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .out-header {
+            .in-header {
+                width: 1125px;
+            }
+        }
+    }
+}
+
+// main header
+.out-header.fixed {
+    position: fixed !important;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: 999;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+.out-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+    top: 0;
+    z-index: 5;
+    position: relative;
+    .in-header {
+        width: 1330px;
+        background-color: #ff6600;
+        clip-path: polygon(100% 0, 100% 42%, 98.5% 100%, 1.5% 100%, 0 42%, 0% 0%);
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .header-words {
+            margin-left: 25px;
+            padding: 21px 20px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            font-size: 16px;
+            line-height: 24px;
+            transition: all 0.3s;
+            &:hover{
+                color: #0c0a0a;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    body {
+        .outTor {
+            .inTor {
+                width: 945px;
+                display: flex;
+                justify-content: space-between;
+                .rightTor {
+                    display: flex;
+                    justify-content: flex-end;
+                    .in-right-tor {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .out-header {
+            .in-header {
+                width: 945px;
+            }
+        }
+    }
+}

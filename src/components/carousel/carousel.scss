@@ -1,0 +1,164 @@
+.carousel {
+    top: -65px;
+}
+button{
+    border: none;
+}
+.carousel-item {
+    height: 900px !important;
+    width: fit-content;
+    img{
+        filter: brightness(50%);
+    }
+}
+.carousel-caption {
+    box-sizing: border-box;
+    width: 1315px;
+    text-align: left !important;
+    padding: 110px 13% !important;
+    left: -7% !important;
+    height: 403px;
+    bottom: 43% !important;
+    h3 {
+        width: 1315px;
+        letter-spacing: 0.5px !important;
+        font-weight: 700 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-transform: uppercase !important;
+        font-family: sans-serif;
+        color: #ffffffff;
+    }
+    p {
+        width: 1315px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        word-break: break-all;
+        height: 250px;
+        font-size: 72px;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 600;
+        line-height: 90px;
+        letter-spacing: -1.5px;
+        color: #ffffffff;
+    }
+    .button-number {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        .nachat {
+            height: 51px;
+            display: flex;
+            align-items: center;
+            background: #ff6600;
+            padding: 17px 33px;
+            border: none;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+            line-height: 10px;
+            max-width: max-content;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: 0.3s;
+            border-radius: 2px;
+            min-width: max-content;
+            letter-spacing: 2px;
+            position: relative;
+            .overlay {
+                position: absolute;
+                top: 51px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #0c0a0a;
+                transition: all 0.3s;
+            }
+            &:hover {
+                span {
+                    color: #fff !important;
+                    z-index: 99999;
+                }
+                .overlay {
+                    top: 0;
+                }
+            }
+            &:active {
+                box-shadow: 3px 2px 0px;
+                margin-left: 2px;
+            }
+        }
+        .button-in-number{
+            display: flex;
+            gap: 13px;
+            align-items: center;
+            .BiPhoneCall{
+          
+                border-radius: 50%;
+                background-color: #ffffff;
+                color: #ff6600;
+                font-size: -5px;
+                width: 52px;
+                height: 52px;
+                font-size: -3px !important;
+            }
+            .button-in-in-number{
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-size: 18px !important;
+                    color: #6e777d;
+                    text-transform: capitalize;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-weight: 600;
+                }
+                a{
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                    color: #ffffffff;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1360px) {
+    .carousel-item{
+        height: 800px !important;
+    }
+    .carousel-caption{
+        width: 1125px;
+        // padding: 100px 200px !important;
+        h3{
+            width: 1125px;
+        }
+        p{
+            width: 1125px;
+            font-size: 64px;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .carousel-item{
+        height: 700px !important;
+    }
+    .carousel-caption{
+        width: 945px;
+        // padding: 100px 200px !important;
+        h3{
+            width: 945px;
+        }
+        p{
+            width: 945px;
+            font-size: 58px;
+        }
+    }
+}
+

@@ -1,0 +1,243 @@
+.out-bigimage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    .in-bigimage {
+        width: 1315px !important;
+        display: flex;
+        .main-bigimage {
+            width: 776px !important;
+            height: 647px !important;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            .in-bg-bigimage {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                background: rgb(12, 10, 10);
+                padding: 40px 50px;
+                h2 {
+                    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                        Verdana, sans-serif;
+                    font-weight: 800;
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    color: #ffffff;
+                    text-transform: capitalize;
+                    text-align: left;
+                }
+                .in-in-bg-bigimage {
+                    display: flex;
+                    span {
+                        font-size: 16px;
+                        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+                            Geneva, Verdana, sans-serif;
+                        font-weight: 800;
+                        color: #ffffff;
+                        transition: all 0.3s ease 0s;
+                        text-transform: capitalize;
+                        &:hover {
+                            color: #ff6600;
+                        }
+                    }
+                    .BsArrowRight {
+                        margin-left: 10px;
+                        color: rgb(255, 255, 255);
+                        height: 27px;
+                        width: 27px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        background-color: #ff6600;
+                    }
+                }
+            }
+        }
+        .bigimage-second {
+            width: 555px;
+            padding: 80px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            h1 {
+                font-weight: 800;
+                text-align: left;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.1px;
+                color: rgb(255, 102, 0);
+                text-transform: uppercase;
+                font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+                    Verdana, sans-serif;
+            }
+            h2 {
+                font-size: 28px;
+                line-height: 43px;
+                font-weight: 700;
+                color: rgb(12, 10, 10);
+                text-transform: uppercase;
+                margin-top: 5px;
+                text-align: left;
+            }
+            .bigimage-second-block {
+                display: flex;
+                background: rgb(242, 243, 245);
+                gap: 30px;
+                padding: 15px;
+                margin-top: 20px;
+                button {
+                    margin-left: 30px;
+                    color: rgb(12, 10, 10);
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-size: 15px;
+                margin-bottom: 10px;
+                color: #6e777d;
+                text-align: left;
+            }
+            .bigimage-second-bigblock {
+                display: flex;
+                gap: 40px;
+                margin-bottom: 50px;
+                .bigimage-second-bigblock-numbers {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        font-weight: 700;
+                        color: #ff6600;
+                        font-size: 60px;
+                    }
+                    h5 {
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+                .bigimage-second-bigblock-row {
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .bigimage-second-bigblock-row1 {
+                        margin-bottom: 7px;
+                        display: flex;
+                        align-items: center;
+                        .AiOutlineCheckCircle {
+                            color: #ff6600;
+                            width: 16px;
+                            height: 16px;
+                            display: flex;
+                            align-items: center;
+                            margin-right: 10px;
+                        }
+                        span {
+                            text-transform: capitalize;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .nachat {
+                height: 51px;
+                display: flex;
+                align-items: center;
+                background: #ff6600;
+                padding: 17px 33px;
+                border: none;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+                line-height: 10px;
+                max-width: max-content;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                transition: 0.3s;
+                border-radius: 2px;
+                min-width: max-content;
+                letter-spacing: 2px;
+                position: relative;
+                .overlay {
+                    position: absolute;
+                    top: 51px;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0c0a0a;
+                    transition: all 0.3s;
+                }
+                &:hover {
+                    span {
+                        color: #fff !important;
+                        z-index: 99999;
+                    }
+                    .overlay {
+                        top: 0;
+                    }
+                }
+                &:active {
+                    box-shadow: 3px 2px 0px;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1380px) {
+    .out-bigimage{
+
+    .in-bigimage {
+        width: 1125px !important;
+        .main-bigimage {
+            width: 665px !important;
+            height: 554px !important;
+        }
+        .bigimage-second {
+            width: 475px;
+            padding: 60px 40px;
+            height: 520px;
+            .bigimage-second-bigblock{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width:1200px){
+    .out-bigimage{
+
+        .in-bigimage {
+            width: 960px !important;
+            display: block;
+
+            .main-bigimage {
+                width: 960px !important;
+                height: 647px !important;
+            }
+            .bigimage-second {
+                width: 960px;
+                .bigimage-second-bigblock{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

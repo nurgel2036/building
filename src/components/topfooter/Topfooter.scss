@@ -1,0 +1,108 @@
+.bg-topfooter {
+    background-image: url(https://wallpaperaccess.com/full/3159248.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 120px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    height: 720px;
+    .in-topfooter {
+        width: 1315px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.1em;
+            color: rgb(255, 102, 0);
+            text-transform: uppercase;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        h6 {
+            color: rgb(48, 48, 48);
+            margin-top: 15px;
+            font-size: 28px;
+            line-height: 43px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: left;
+        }
+        .topfooter-blocks {
+            display: flex;
+            width: 1315px;
+            justify-content: space-between;
+            margin-top: 60px;
+
+            .topfooter-block {
+                width: 305px;
+                height: 292px;
+                background-color: #ff6600;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 80px;
+                    width: 80px;
+                    margin-bottom: 25px;
+                    padding: 20px;
+                    border-radius: 50%;
+                    background: rgb(255, 255, 255);
+                    .FcIdea {
+                        width: 36px;
+                        height: 40px;
+                        color: #ff6600;
+                    }
+                }
+                p {
+                    font-size: 40px;
+                    color: #ffffff;
+                    font-weight: 700;
+                }
+                h4 {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: rgb(255, 255, 255);
+                    margin-bottom: 0px;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .bg-topfooter {
+        .in-topfooter {
+            width: 1125px;
+            .topfooter-blocks {
+                width: 1125px;
+                .topfooter-block {
+                    width: 260px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .bg-topfooter {
+        .in-topfooter {
+            width: 960px !important;
+            .topfooter-blocks {
+                width: 960px !important;
+                .topfooter-block {
+                    width: 215px !important;
+                }
+            }
+        }
+    }
+}
+
